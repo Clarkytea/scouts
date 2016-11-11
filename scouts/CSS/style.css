@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+}
+.container{
+    color: white;
+    height: 120px;
+}
+header{
+    max-height: 150px;
+    color: black;
+}
+#logo{
+    height: 150px;
+    width: auto;
+}
+#nav{
+    height: 50PX;
+    background-color: #4d2177;
+    color: white; 
+    clear:both;
+}
+.container{
+    height: 1000px;
+}
+#nav ul{
+    text-align: center;
+}
+h3{
+    color:red;
+}
+#nav ul li{
+    display: inline;
+    font-family: "TheSerif";
+    font-size: 1.6em;
+    padding: 30px;
+    line-height: 45px;
+}
+h2{
+    font-family: "TheSerif";
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+h3{
+    font-weight: bold;
+    font-family: "TheSerif";
+    letter-spacing: -1px;
+}
+.placehold{
+    width: 100%;
+    height: 300px;
+    background-color: grey;
+}
+.first{
+    color: #4d2177;
+}
+.second{
+    color: #84A40B;
+}
+@media screen 
+    and (device-width: 430px){
+        #nav ul li{
+            width: 100%;
+            box-sizing: border-box;
+        } 
+} 
+@media screen 
+    and (device-width: 1330px){
+        #nav ul li{
+            padding: 10px;
+        } 
+}
