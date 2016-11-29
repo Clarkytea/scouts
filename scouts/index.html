@@ -4,18 +4,18 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <title>1st Owlsmoor Scouts</title>
-      <! -----------------------   JS ---------------------->
+      <! -----------------------JS ---------------------->
       <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
       <script src="Js/script.js"></script>
-      <! -----------------------   CSS ---------------------->
-      <link rel="stylesheet" href="CSS/style.css" type="text/css">
+      <! -----------------------CSS ---------------------->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+       <link rel="stylesheet" href="CSS/style.css" type="text/css">
    </head>
    <body>
       <div class="container">
          <header class="row">
-            <h2 class= "col s8"><span class="first">1ST OWLSMOOR </span><span class="second">SCOUT GROUP</span></h2>
-            <img class= "col s4" id="logo" src="img/ScoutLogoPurple.png"/>
+            <h2 class= "col s8 m8"><span class="first">1ST OWLSMOOR </span><span class="second">SCOUT GROUP</span></h2>
+            <img class= "col s2 m2" id="logo" src="img/ScoutLogoPurple.png"/>
          </header>
          <div id="nav">
             <ul>
@@ -26,51 +26,80 @@
                <li>Contact</li>
                <li>Links &#38; Information</li>
             </ul>
+            <div class="handle">Menu</div>
          </div>
-         <div class="placehold">  
-             <img src="http://lorempixel.com/1280/300">
-         </div>
+              <div class="placehold">
+              </div>
          <div class="row">
-            <div class="col s12 m4 l4">
+            <div class="col s12 m6 l4">
                <h3><span class="first">WELCOME...</span></h3>
                <p>Welcome to the 1st Owlsmoor Scout Group website. On this site we aim to give details of scouting  activities and events within Owlsmoor, (near Sandhurst), Berkshire, UK.</p>
                <p>Here you can find information on Beavers, Cubs and Scouts and details of how to join us.</p>
             </div>
-            <div class="col s12 m4 l4">
+            <div class="col s12 m6 l4">
                <h3><span class="second">HELP NEEDED...</span></h3>
                <p>Are you interested in volunteering with 1st Owlsmoor Scout Group? Please click <span class="first">here</span> for more information.</p>
             </div>
-            <div class="col s12 m4 l4">
-               <h3><span class="first">MORE INFORMATION...</span></h3>
-               <p>Welcome Lorem upsum adventures shit</p>
-               <p>Welcome Lorem upsum adventures stuff</p>
-               <p>Welcome Lorem upsum adventures stuff</p>
-               <p>Welcome Lorem upsum adventures stuff</p>
+            <div class="col s12 m6 l4">
+               <h3><span class="first">LATEST NEWS..</span></h3>
+               <p>News Item One</p>
+               <p>News Item Two</p>
+               <p>News Item Three</p>
+               <p>News Item Four</p>
             </div>
          </div>
+       </div>
         <div class="row">
-            <div id="map-container" class="col m12">
-                <h3><span class="second">WHERE ARE WE?</span></h3>
-                <div class="col m6 s12">
+            <div id="map-container" class="col m12 col s12">
+                <div class="col m4 offset-m2 s12">
+                    <h3><span class="second">WHERE ARE WE?</span></h3>
                     <p>1st Owlsmoor Scouts are located within Owlsmoor School, Owlsmoor, Sandhurst, Berkshire GU47 0UZ.</p>
                     <p>There are entrances to the grounds in three places :</p>
                     <ul class="directions">
                         <li>Oxford Rd, Owlsmoor, Sandhurst GU47 0TR</li>
                         <li>Cambridge Rd, Owlsmoor, Sandhurst GU47 0TA</li>
                         <li>Birkbeck Place, Owlsmoor,  Sandhurst GU47 0UL</li>
-                    </ul>    
+                    </ul>
                 </div>
-                <div class="col m6 s12">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1245.8255022429405!2d-0.7763662846031351!3d51.35432781165442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48768022c2f8aac1%3A0x73a697283fc936ed!2sOwlsmoor+Primary+School!5e0!3m2!1sen!2suk!4v1479478448175" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <div class="col l4 m5 s12">
+                    <iframe class ="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1245.8255022429405!2d-0.7763662846031351!3d51.35432781165442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48768022c2f8aac1%3A0x73a697283fc936ed!2sOwlsmoor+Primary+School!5e0!3m2!1sen!2suk!4v1479478448175" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
-            </div>  
-        </div>
-      </div>
-       <div class="row">
-            <div id="contact" class="col m12">
-                <h3>Get in Touch....</h3>
             </div>
-        </div>   
+        </div>
+       <div class="row">
+            <div id="contact" class="col m12 s12">
+                <div class="col m2 offset-m2">
+                    <h3 class="offset-m2">GET IN TOUCH...</h3>
+                </div>
+                <form class="col m8 s12 offset-m2">
+                    <div class="row">
+                        <div class="input-field col s4">
+                          <input placeholder="Your name" id="name" type="text" class="validate">
+                          <label for="name">Name</label>
+                        </div>
+                        <div class="input-field col s4">
+                          <input placeholder="youremail@example.co.uk" id="email" type="text" class="validate">
+                          <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s10">
+                         <textarea id="text" class="materialize-textarea"></textarea>
+                         <label for="textarea1">Your message:</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class=" col m2 offset-m5">
+                         <button class="btn waves-effect waves-light" type="button" name="action">Submit
+                         <i class="material-icons right"></i>
+                         </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+        </div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
    </body>
 </html>

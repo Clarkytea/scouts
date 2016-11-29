@@ -1,3 +1,12 @@
+@font-face {
+ font-family: 'TheSerif Bold';
+  src: url(../fonts/TheSerifBoldPlain.ttf);
+}
+@font-face {
+ font-family: 'TheSerif Plain';
+  src: url(../fonts/TheSerifPlain.ttf);
+}
+
 body, html{
     margin: 0;
     height: 100%;
@@ -6,43 +15,55 @@ body, html{
 .container{
     color: white;
     height: 120px;
+    overflow:visible;
 }
 header{
     max-height: 150px;
     color: black;
+}
+footer{
+  background-color: #4d2177;
+  height:200px;
 }
 #logo{
     height: 150px;
     width: auto;
 }
 #nav{
-    height: 50PX;
     background-color: #4d2177;
-    color: white; 
+    color: white;
     clear:both;
+    transition: height 0.5s;
 }
 .container{
     height: auto;
 }
 #nav ul{
     text-align: center;
+    transition: height 0.5s;
+    margin-bottom: 0px;
+    overflow: hidden;
 }
 #nav ul li{
-    display: inline;
-    font-family: "TheSerif";
+    display: inline-block;
+    font-family: "TheSerif Plain";
     font-size: 1.6em;
-    padding: 30px;
+    padding: 20px;
+    padding-top: 10px;
     line-height: 45px;
 }
+#nav ul li:hover{
+    background-color: #33164f;
+}
 h2{
-    font-family: "TheSerif";
+    font-family: "TheSerif Bold";
     letter-spacing: -1px;
     font-weight: bold;
 }
 h3{
     font-weight: bold;
-    font-family: "TheSerif";
-    font-size:1.5em;
+    font-family: "TheSerif Bold";
+    font-size:2.5em;
     letter-spacing: -1px;
     overflow: hidden;
 }
@@ -56,12 +77,18 @@ h3{
     background-color: grey;
 }
 #map-container{
-    width: 100%;
-    background-color: gray;
-    overflow: visible;
+    padding: 0;
+    background-color:#dfdfdf;
+    color: #fff;
+}
+#map-container ul li{
+    padding-bottom: 3px;
+}
+.row{
+    margin-bottom: 0;
 }
 p{
-    font-family: "TheSerif";
+    font-family: "TheSerif Plain";
     font-size: 24px;
     color:#757575;
 }
@@ -70,21 +97,56 @@ p{
 }
 .second{
     color: #84A40B;
-} 
-#contact{
-    background-color:#84A40B;
-    height:300px;
 }
-@media screen 
-    and (device-width: 430px){
+form{
+    background-color: white;
+    border-radius:5px;
+    padding-top: 10px;
+    color:black;
+}
+.handle{
+    width:100%;
+    text-align: left;
+    background-color:inherit;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 15px 10px;
+    display: none;
+}
+.btn{
+    background-color: #6f9c2e;
+    margin-bottom: 2px;
+}
+#contact{
+    background-color:#6f9c2e;
+    color: white;
+}
+
+@media screen and (max-width: 600px){
+        #nav{
+            height:auto;
+            width: 100%;
+        }
+
+        #nav ul{
+            height: 0;
+        }
+        .showing{
+            height: 500px;
+        }
         #nav ul li{
             width: 100%;
             box-sizing: border-box;
-        } 
-} 
-@media screen 
+            padding: 15px;
+            text-align: left;
+        }
+        .handle{
+            display: block;
+        }
+}
+@media screen
     and (device-width: 1330px){
         #nav ul li{
             padding: 10px;
-        } 
+        }
 }
