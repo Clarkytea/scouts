@@ -50,13 +50,13 @@ $(document).ready(function(){
               message: message
             })
             .done(function(data){
-              feedback = data;
-              console.log(feedback["message"]);
-              Materialize.toast(feedback[0].message, 4000)
+              feedback = JSON.parse(data);
+              console.log(feedback.message);
+              Materialize.toast(feedback.message, 4000)
             })
             .fail(function(data){
-              feedback = data;
-              Materialize.toast(feedback[0].message,4000)
+              feedback = JSON.parse(data);
+              Materialize.toast(feedback.message,4000)
             });
         }
         else{
