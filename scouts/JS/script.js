@@ -1,5 +1,8 @@
 /*
   A General Javascript file for basic utilites
+
+  Including : Navigation slider, Carousel and Contact Form scipts
+
   Author - Michael Clark
 */
 
@@ -27,6 +30,30 @@ $(document).ready(function(){
         }
     });
 
+
+    //Owl Carousel customisation
+    // Extending owl carousel's script
+
+    $("#owl-example").owlCarousel({
+    items : 3,
+    itemsCustom : false,
+    itemsDesktop : [1199,3],
+    itemsDesktopSmall : [980,3],
+    itemsTablet: [768,2],
+    itemsTabletSmall: false,
+    itemsMobile : [479,1],
+    singleItem : false,
+    itemsScaleUp : false,
+
+    pagination: true,
+    slideSpeed : 200,
+    paginationSpeed : 800,
+    rewindSpeed : 1000,
+    //Play automatically - true/false -
+    autoPlay : true,
+    stopOnHover : true,
+  });
+
     // -------------------------------
 
     // FORM SUBMISSION
@@ -40,7 +67,6 @@ $(document).ready(function(){
         var name = $("#name").val();
         var message = $("#text").val();
         var email = $("#email").val();
-
 
         if(name != 0){
             $.post("../scouts/php/contact.php",{

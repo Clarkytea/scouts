@@ -30,8 +30,5 @@
         }
           echo json_encode($feedback);
         }
-        else{
-          echo "fuck off";
-        }
 
 ?>
